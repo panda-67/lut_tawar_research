@@ -1,0 +1,13 @@
+{
+  "name": "lut-tawar-ndvi",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "@google/earthengine": "^1.7.45",
+    "google-auth-library": "^11.1.0"
+  }
+}

@@ -1,0 +1,195 @@
+# ============================================================
+
+# Node.js
+
+# ============================================================
+
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package manager caches
+
+.pnpm-store/
+
+# ============================================================
+
+# Environment & secrets
+
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# OAuth / Google credentials
+
+credentials/
+credentials/*.json
+
+# ============================================================
+
+# Google Earth Engine
+
+# ============================================================
+
+# Local Earth Engine authentication
+
+.earthengine/
+
+# Earth Engine generated/local files
+
+.ee/
+
+# OAuth tokens
+
+token.json
+credentials.json
+
+# ============================================================
+
+# Project outputs
+
+# ============================================================
+
+data/output/
+data/exports/
+data/tmp/
+data/cache/
+
+# Raster/vector outputs
+
+*.tif
+*.tiff
+*.img
+*.vrt
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+
+# Tabular analysis outputs
+
+*.csv
+*.xlsx
+*.xls
+
+# Earth Engine task/export metadata
+
+*.task
+
+# ============================================================
+
+# Temporary / intermediate files
+
+# ============================================================
+
+tmp/
+temp/
+cache/
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# GDAL temporary files
+
+*.aux.xml
+*.ovr
+
+# ============================================================
+
+# OS files
+
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+ehthumbs.db
+
+# ============================================================
+
+# IDE / editors
+
+# ============================================================
+
+.vscode/
+.idea/
+
+# Vim / Neovim
+
+*.swp
+*.swo
+*.un~
+Session.vim
+
+# ============================================================
+
+# Logs
+
+# ============================================================
+
+logs/
+*.log
+
+# ============================================================
+
+# Coverage / testing
+
+# ============================================================
+
+coverage/
+.nyc_output/
+
+# ============================================================
+
+# Build / distribution
+
+# ============================================================
+
+dist/
+build/
+
+# Vite / frontend tooling, if added later
+
+.vite/
+
+# ============================================================
+
+# Local project files
+
+# ============================================================
+
+.local/
+.local-*/
+*.local
+
+# ============================================================
+
+# Keep important project structure
+
+# ============================================================
+
+# Git does not track empty directories.
+
+# Add .gitkeep manually to directories that should exist,
+
+# for example:
+
+#
+
+# data/output/.gitkeep
+
+# data/tmp/.gitkeep
+
+# data/cache/.gitkeep
