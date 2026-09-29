@@ -27,7 +27,11 @@ export const CONFIG = {
   },
 
   riparian: {
-    distances: [30, 100, 250],
+    distances: [5, 25, 55],
+  },
+
+  ndvi: {
+    lowThreshold: 0.4,
   },
 
   scale: 10,

@@ -11,5 +11,17 @@ export function createMNDWIComposite(collection, roi) {
 }
 
 export function createWaterMask(mndwi, threshold) {
-  return mndwi.gt(threshold).rename("water");
+  return mndwi.gt(threshold).selfMask().rename("water");
+}
+
+export function calculateWaterArea(waterMask, roi, scale) {
+  return ee.Image.pixelArea()
+    .updateMask(waterMask)
+    .reduceRegion({
+      reducer: ee.Reducer.sum(),
+      geometry: roi,
+      scale,
+      maxPixels: 1e9,
+    })
+    .get("area");
 }

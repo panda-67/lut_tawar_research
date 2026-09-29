@@ -37,3 +37,15 @@ export async function loadROI(filePath) {
 
   throw new Error(`Tipe GeoJSON tidak didukung: ${geojson.type}`);
 }
+
+export async function exportAOI(geometry, output) {
+  const geojson = geometry.getInfo();
+
+  await fs.mkdir("data/output", {
+    recursive: true,
+  });
+
+  await fs.writeFile(output, JSON.stringify(geojson, null, 2), "utf8");
+
+  console.log(`GeoJSON exported: ${output}`);
+}
