@@ -34,10 +34,16 @@ export const CONFIG = {
     lowThreshold: 0.4,
   },
 
+  rainfall: {
+    collection: "UCSB-CHG/CHIRPS/DAILY",
+    scale: 5566,
+    windows: [7, 30, 60, 90],
+  },
+
   scale: 10,
 
   date: {
-    start: "2025-01-01",
-    end: "2026-01-01",
+    start: "2024-08-01",
+    end: "2026-08-01",
   },
 };

@@ -6,7 +6,7 @@ export function buildAnalysisLayer({
   waterPolygons,
   shoreline,
   vegetationStats,
-  candidates,
+  netCandidates,
 }) {
   const mainLakeFeature = ee.Feature(mainLake.geometry(), {
     zone: "main_lake",
@@ -25,7 +25,7 @@ export function buildAnalysisLayer({
 
   const lakeLayer = ee.FeatureCollection([mainLakeFeature]);
 
-  const restorationLayer = candidates.map(function (feature) {
+  const restorationLayer = netCandidates.map(function (feature) {
     return feature.set({
       zone_type: "restoration",
     });

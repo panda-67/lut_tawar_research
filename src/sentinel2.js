@@ -10,7 +10,10 @@ export function maskS2(image) {
     .and(scl.neq(10)) // Cirrus
     .and(scl.neq(11)); // Snow/ice
 
-  return image.updateMask(mask).divide(10000).copyProperties(image, ["system:time_start"]);
+  return image
+    .updateMask(mask)
+    .divide(10000)
+    .copyProperties(image, ["system:time_start", "CLOUDY_PIXEL_PERCENTAGE"]);
 }
 
 export function getSentinel2(roi, startDate, endDate, cloudPercentage) {

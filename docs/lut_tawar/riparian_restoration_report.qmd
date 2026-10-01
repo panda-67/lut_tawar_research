@@ -1,0 +1,457 @@
+---
+title: "Riparian Vegetation Assessment and Restoration Planning"
+subtitle: "Lake Lut Tawar, Aceh, Indonesia"
+author: "Lut Tawar Analysis Team"
+date: "2026"
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+    fontsize: 11pt
+    linestretch: 1.15
+    toc: true
+    number-sections: true
+    colorlinks: true
+    fig-pos: H
+---
+
+# Executive Summary
+
+Lake Lut Tawar is surrounded by riparian areas that provide important ecological functions, including shoreline stabilization, habitat provision, vegetation connectivity, and buffering between terrestrial activities and the lake ecosystem.
+
+This assessment evaluates vegetation condition within three riparian zones extending from the shoreline:
+
+* 0–5 m
+* 5–20 m
+* 20–50 m
+
+Vegetation condition was assessed using the Normalized Difference Vegetation Index (NDVI) derived from Sentinel-2 satellite imagery. Areas with NDVI values below 0.4 were classified as low-NDVI areas and identified as potential restoration candidates. Low NDVI is used here as a screening indicator and does not, by itself, confirm ecological degradation or restoration suitability.
+
+The spatial analysis covered approximately **254.83 ha** of riparian area along a **68.74 km** shoreline surrounding a **5,742.99 ha** main lake. The analysis identified approximately **83.42 ha** of low-NDVI candidate area across the three riparian zones.
+
+Because some low-NDVI areas may not be suitable for restoration due to buildings, infrastructure, exposed surfaces, or other site constraints, a **10% planning allowance** was applied. This allowance is a planning adjustment rather than an estimate of classification error and should be refined through field validation.
+
+| Parameter                               |        Value |
+| :-------------------------------------- | -----------: |
+| Main lake area                          |  5,742.99 ha |
+| Shoreline length                        |     68.74 km |
+| Riparian assessment area                |    254.83 ha |
+| Low-NDVI candidate area                 |     83.42 ha |
+| Planning allowance (10%)                |      8.34 ha |
+| **Effective restoration planning area** | **75.08 ha** |
+
+The resulting **75.08 ha** represents the preliminary effective restoration planning area and provides the quantitative baseline for developing a five-year riparian restoration program. The candidate areas should subsequently be validated in the field to distinguish genuinely degraded or restorable sites from areas where low NDVI is associated with land use, built infrastructure, exposed substrate, water-related conditions, or other non-restorable features.
+
+# Introduction
+
+## Background
+
+Lake Lut Tawar is an important freshwater ecosystem in the Gayo Highlands of Aceh. The condition of vegetation surrounding the lake is relevant to shoreline stability, terrestrial–aquatic ecological connectivity, habitat quality, and protection of the lake from surrounding land-use pressures.
+
+Riparian vegetation can function as a buffer between terrestrial activities and aquatic ecosystems. Loss or reduction of vegetation may increase the exposure of the shoreline to erosion, sediment transport, and other environmental pressures.
+
+A spatial assessment is therefore required to identify areas where vegetation condition is relatively low and where restoration interventions may be considered.
+
+## Objectives
+
+The objectives of this assessment are to:
+
+1. delineate the main lake and its shoreline;
+2. establish riparian assessment zones at 0–5 m, 5–20 m, and 20–50 m from the shoreline;
+3. assess vegetation condition using NDVI;
+4. identify areas with NDVI below 0.4 as restoration candidates;
+5. estimate the effective restoration area after applying a non-restorable-area allowance; and
+6. establish a quantitative baseline for a five-year riparian restoration program.
+
+# Methods
+
+## Study Area
+
+The assessment focuses on the main water body of Lake Lut Tawar and the adjacent riparian zones.
+
+Three non-overlapping riparian zones were defined based on distance from the delineated shoreline.
+
+| Zone | Distance from shoreline |
+|:--|--:|
+| Riparian Zone 1 | 0–5 m |
+| Riparian Zone 2 | 5–20 m |
+| Riparian Zone 3 | 20–50 m |
+
+The zones represent progressively wider terrestrial buffers surrounding the lake.
+
+## Lake Delineation
+
+The main lake boundary was delineated using Sentinel-2 satellite imagery and a Modified Normalized Difference Water Index (MNDWI).
+
+The resulting lake boundary was used as the reference geometry for generating the riparian zones.
+
+## NDVI Analysis
+
+Vegetation condition was assessed using the Normalized Difference Vegetation Index:
+
+$$
+NDVI = \frac{NIR - Red}{NIR + Red}
+$$
+
+where:
+
+- $NIR$ represents near-infrared reflectance;
+- $Red$ represents red-band reflectance.
+
+Higher NDVI values generally indicate greater vegetation activity, whereas low or negative values may indicate sparse vegetation, bare surfaces, water, buildings, or other non-vegetated surfaces.
+
+## Low-NDVI Threshold
+
+For this assessment, areas with
+
+$$
+NDVI < 0.4
+$$
+
+were classified as low-NDVI areas.
+
+The threshold is used as a **screening criterion**, rather than as direct evidence that an area is degraded.
+
+Therefore:
+
+> Low-NDVI area = restoration candidate area
+
+and not:
+
+> Low-NDVI area = confirmed degraded area.
+
+This distinction is important because NDVI alone cannot reliably distinguish between degraded vegetation, buildings, bare soil, roads, agricultural surfaces, and other low-vegetation or non-vegetated features.
+
+## Restoration Area Adjustment
+
+The total low-NDVI area was adjusted using a 10% planning allowance for areas that may not be suitable for restoration.
+
+The allowance represents potential:
+
+- buildings;
+- roads and infrastructure;
+- exposed surfaces;
+- non-vegetated land uses;
+- other spatial classification artefacts; and
+- areas that may be unsuitable for direct vegetation restoration.
+
+The adjustment was calculated as:
+
+$$
+A_{allowance} = A_{lowNDVI} \times 0.10
+$$
+
+and:
+
+$$
+A_{effective} =
+A_{lowNDVI} - A_{allowance}
+$$
+
+Thus:
+
+$$
+A_{effective} =
+A_{lowNDVI} \times 0.90
+$$
+
+The 10% value should be interpreted as a **planning allowance**, not as a statistically estimated classification error.
+
+# Results
+
+## Riparian Area
+
+The total area within the three riparian zones is approximately **254.83 ha**.
+
+| Riparian zone | Total area |
+|:--|--:|
+| 0–5 m | 31.40 ha |
+| 5–20 m | 79.51 ha |
+| 20–50 m | 143.92 ha |
+| **Total** | **254.83 ha** |
+
+The 20–50 m zone represents the largest spatial component of the assessment area.
+
+## Low-NDVI Area
+
+Using the NDVI threshold of <0.4, a total of **83.42 ha** was identified as low-NDVI area.
+
+| Riparian zone | Total area | Low-NDVI area | Low-NDVI proportion |
+|:--|--:|--:|--:|
+| 0–5 m | 31.40 ha | 20.21 ha | 64.36% |
+| 5–20 m | 79.51 ha | 32.82 ha | 41.28% |
+| 20–50 m | 143.92 ha | 30.39 ha | 21.12% |
+| **Total** | **254.83 ha** | **83.42 ha** | **32.73%** |
+
+Approximately one-third of the assessed riparian area falls below the NDVI screening threshold.
+
+The proportion is highest in the 0–5 m zone, where approximately 64.36% of the zone is classified as low-NDVI.
+
+## Effective Restoration Area
+
+A 10% planning allowance was applied to the low-NDVI area in each zone.
+
+| Riparian zone | Low-NDVI area | 10% allowance | Effective restoration area |
+|:--|--:|--:|--:|
+| 0–5 m | 20.21 ha | 2.02 ha | **18.19 ha** |
+| 5–20 m | 32.82 ha | 3.28 ha | **29.54 ha** |
+| 20–50 m | 30.39 ha | 3.04 ha | **27.35 ha** |
+| **Total** | **83.42 ha** | **8.34 ha** | **75.08 ha** |
+
+The resulting **75.08 ha** is used as the preliminary planning baseline for the five-year restoration program.
+
+# Interpretation
+
+## Spatial Distribution of Low-NDVI Areas
+
+The distribution of low-NDVI areas differs substantially among the three riparian zones.
+
+The 0–5 m zone has the highest proportion of low-NDVI area:
+
+$$
+64.36\%
+$$
+
+The 5–20 m zone has:
+
+$$
+41.28\%
+$$
+
+while the 20–50 m zone has:
+
+$$
+21.12\%
+$$
+
+This pattern indicates that vegetation condition, as represented by NDVI, is generally lower closer to the shoreline.
+
+However, the result should not be interpreted as evidence that all low-NDVI areas require planting.
+
+The 0–5 m zone may contain shoreline surfaces, exposed substrate, infrastructure, water-related features, or other areas where low NDVI is expected or where conventional tree planting may not be appropriate.
+
+## Restoration Candidate versus Restoration Target
+
+The analysis distinguishes two concepts.
+
+**Low-NDVI candidate area**
+
+The **83.42 ha** identified from the NDVI threshold.
+
+**Effective restoration planning area**
+
+The **75.08 ha** remaining after applying the 10% non-restorable-area allowance.
+
+The 75.08 ha should therefore be regarded as a **preliminary planning target**, rather than a confirmed area for planting.
+
+Before implementation, candidate areas should be screened against:
+
+- land cover;
+- existing vegetation;
+- buildings;
+- roads;
+- agricultural land;
+- accessibility;
+- slope;
+- land ownership; and
+- other relevant constraints.
+
+# Five-Year Restoration Framework
+
+The preliminary restoration baseline is approximately **75.08 ha**. The five-year program should combine restoration implementation with annual monitoring and adaptive management. A preliminary allocation is:
+
+| Year | Main activity | Indicative target | Percentage |
+|:--|:--|--:|--:|
+| Year 1 | Detailed screening, pilot restoration, site preparation | 10 ha | 13.32% |
+| Year 2 | Restoration expansion and maintenance | 15 ha | 33.30% |
+| Year 3 | Large-scale restoration | 20 ha | 59.94% |
+| Year 4 | Restoration expansion and infill planting | 20 ha | 86.58% |
+| Year 5 | Completion and gap restoration | 10.08 ha | 100.00% |
+| **Total** | | **75.08 ha** | **100.00%** |
+
+These annual values represent a planning framework and should be refined after field validation.
+
+## Year 1 — Validation and Pilot Restoration
+
+The first year should focus on converting the remote-sensing candidate layer into verified restoration sites.
+
+Key activities include:
+
+- field validation of low-NDVI polygons;
+- identification of buildings and infrastructure;
+- identification of existing natural vegetation;
+- assessment of land-use constraints;
+- identification of suitable restoration techniques;
+- establishment of permanent monitoring plots; and
+- implementation of pilot restoration sites.
+
+The indicative implementation target is approximately **10 ha**.
+
+## Year 2 — Restoration Expansion
+
+The second year should expand restoration into validated sites while maintaining the areas restored during Year 1.
+
+Indicative target:
+
+**15 ha**
+
+Cumulative restored area:
+
+**25 ha**
+
+## Year 3 — Large-Scale Restoration
+
+Year 3 represents the main implementation phase.
+
+Indicative target:
+
+**20 ha**
+
+Cumulative restored area:
+
+**45 ha**
+
+Priority should be given to validated areas with high ecological relevance and feasible restoration conditions.
+
+## Year 4 — Expansion and Infill
+
+Year 4 should address remaining candidate areas and gaps within previously restored sites.
+
+Indicative target:
+
+**20 ha**
+
+Cumulative restored area:
+
+**65 ha**
+
+## Year 5 — Completion and Gap Restoration
+
+The final year should focus on completing the restoration target and addressing sites where previous restoration failed or vegetation recovery remains insufficient.
+
+Indicative target:
+
+**10.08 ha**
+
+Cumulative restored area:
+
+**75.08 ha**
+
+# Restoration Prioritization
+
+The NDVI analysis provides the initial spatial screening layer. Final prioritization should incorporate additional variables.
+
+| Criterion | Purpose |
+|:--|:--|
+| NDVI | Identify areas with relatively low vegetation condition |
+| Distance from shoreline | Identify areas with direct riparian function |
+| Existing vegetation | Avoid unnecessary replacement of healthy vegetation |
+| Land cover | Exclude incompatible land uses |
+| Buildings/infrastructure | Identify non-restorable surfaces |
+| Slope | Assess restoration feasibility |
+| Accessibility | Assess implementation feasibility |
+| Land tenure | Assess legal and institutional feasibility |
+| Erosion exposure | Identify sites with shoreline stabilization potential |
+| Natural regeneration | Prioritize assisted regeneration where appropriate |
+
+The resulting priority map should classify candidate areas into restoration management classes rather than treating every low-NDVI polygon identically.
+
+# Monitoring and Evaluation
+
+## Remote-Sensing Monitoring
+
+NDVI should be recalculated periodically using comparable satellite imagery and processing procedures.
+
+The basic monitoring sequence is:
+
+$$
+Baseline
+\rightarrow
+Year\ 1
+\rightarrow
+Year\ 2
+\rightarrow
+Year\ 3
+\rightarrow
+Year\ 4
+\rightarrow
+Year\ 5
+$$
+
+Changes in NDVI can then be used to evaluate vegetation recovery.
+
+## Field Monitoring
+
+Remote sensing should be complemented by field measurements.
+
+Potential indicators include:
+
+- vegetation cover;
+- plant survival;
+- natural regeneration;
+- species composition;
+- canopy development;
+- invasive species occurrence;
+- shoreline erosion;
+- exposed soil; and
+- evidence of human disturbance.
+
+## Restoration Performance
+
+Restoration success should not be evaluated solely from the number of hectares planted.
+
+A restored site should ideally demonstrate:
+
+1. persistence of planted vegetation;
+2. increasing vegetation cover;
+3. increasing or recovering NDVI;
+4. natural regeneration;
+5. reduced exposed soil; and
+6. improvement in relevant shoreline ecological functions.
+
+# Limitations
+
+Several limitations should be considered when interpreting the results.
+
+First, NDVI is an indirect indicator of vegetation condition. NDVI <0.4 does not necessarily indicate ecological degradation.
+
+Second, satellite imagery may capture temporary conditions related to seasonality, water level, agricultural activities, exposed soil, or other short-term processes.
+
+Third, the 10% allowance is a **planning assumption**, not an independently measured classification error. Its purpose is to provide a conservative adjustment between the remotely sensed candidate area and the area used for restoration planning.
+
+Fourth, the final restoration area requires field validation before implementation.
+
+Therefore, the estimated **75.08 ha** should be treated as a preliminary planning figure that can be updated following field verification.
+
+# Conclusions
+
+The analysis identified approximately **254.83 ha** of riparian area within the 0–50 m assessment zone surrounding Lake Lut Tawar.
+
+Using an NDVI threshold of <0.4, approximately **83.42 ha**, or **32.73%** of the assessed riparian area, was identified as low-NDVI candidate area.
+
+The distribution was:
+
+- **20.21 ha** in the 0–5 m zone;
+- **32.82 ha** in the 5–20 m zone; and
+- **30.39 ha** in the 20–50 m zone.
+
+A 10% planning allowance was applied to account for areas that may not be suitable for restoration. This resulted in an estimated effective restoration planning area of approximately **75.08 ha**.
+
+The 75.08 ha baseline provides a quantitative basis for developing a five-year restoration program. However, the final restoration footprint should be determined through spatial screening and field validation before implementation.
+
+The recommended workflow is therefore:
+$$
+\begin{aligned}
+1.&\quad \text{NDVI Screening} \\
+2.&\quad \text{Candidate Area} \\
+3.&\quad \text{10\% Planning Adjustment} \\
+4.&\quad \text{Field Validation} \\
+5.&\quad \text{Priority Sites} \\
+6.&\quad \text{Restoration} \\
+7.&\quad \text{Annual Monitoring}
+\end{aligned}
+$$
